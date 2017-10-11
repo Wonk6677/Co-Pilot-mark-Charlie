@@ -46,7 +46,7 @@ import re
 
 #set to 1 to disable all GPIO, temp probe, and obd stuff
 global developermode
-developermode = 1
+developermode = 0
 global devtaps #used to keep track of taps on settings label - 5 will force devmode
 devtaps = 0
 
