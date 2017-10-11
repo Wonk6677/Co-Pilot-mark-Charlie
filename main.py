@@ -40,8 +40,6 @@ import kivymd.snackbar as Snackbar
 import re
 
 
-#from kivy.garden.mapview import MapView
-
 #I know global variables are the devil....but they are so easy
 
 #set to 1 to disable all GPIO, temp probe, and obd stuff
