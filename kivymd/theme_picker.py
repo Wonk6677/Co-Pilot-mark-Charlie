@@ -82,11 +82,11 @@ Builder.load_string("""
                         size_hint: (None, None)
                         canvas:
                             Color:
-                                rgba: root.rgb_hex('DarkRed')
+                                rgba: root.rgb_hex('Pink')
                             Ellipse:
                                 size: self.size
                                 pos: self.pos
-                        on_release: app.theme_cls.primary_palette = 'DarkRed'
+                        on_release: app.theme_cls.primary_palette = 'Pink'
                 BoxLayout:
                     MDIconButton:
                         size: dp(40), dp(40)
@@ -125,11 +125,11 @@ Builder.load_string("""
                         size_hint: (None, None)
                         canvas:
                             Color:
-                                rgba: root.rgb_hex('DarkBlue')
+                                rgba: root.rgb_hex('Indigo')
                             Ellipse:
                                 size: self.size
                                 pos: self.pos
-                        on_release: app.theme_cls.primary_palette = 'DarkBlue'
+                        on_release: app.theme_cls.primary_palette = 'Indigo'
                 BoxLayout:
                     MDIconButton:
                         size: dp(40), dp(40)
@@ -137,11 +137,11 @@ Builder.load_string("""
                         size_hint: (None, None)
                         canvas:
                             Color:
-                                rgba: root.rgb_hex('Indigo')
+                                rgba: root.rgb_hex('Blue')
                             Ellipse:
                                 size: self.size
                                 pos: self.pos
-                        on_release: app.theme_cls.primary_palette = 'Indigo'
+                        on_release: app.theme_cls.primary_palette = 'Blue'
                 BoxLayout:
                     MDIconButton:
                         size: dp(40), dp(40)
@@ -193,11 +193,11 @@ Builder.load_string("""
                         size_hint: (None, None)
                         canvas:
                             Color:
-                                rgba: root.rgb_hex('DarkGreen')
+                                rgba: root.rgb_hex('Green')
                             Ellipse:
                                 size: self.size
                                 pos: self.pos
-                        on_release: app.theme_cls.primary_palette = 'DarkGreen'
+                        on_release: app.theme_cls.primary_palette = 'Green'
                 BoxLayout:
                     MDIconButton:
                         size: dp(40), dp(40)
@@ -291,11 +291,11 @@ Builder.load_string("""
                         size_hint: (None, None)
                         canvas:
                             Color:
-                                rgba: root.rgb_hex('Black')
+                                rgba: root.rgb_hex('Brown')
                             Ellipse:
                                 size: self.size
                                 pos: self.pos
-                        on_release: app.theme_cls.primary_palette = 'Black'
+                        on_release: app.theme_cls.primary_palette = 'Brown'
                 BoxLayout:
                     MDIconButton:
                         size: dp(40), dp(40)
