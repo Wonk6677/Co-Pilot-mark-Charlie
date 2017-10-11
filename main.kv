@@ -28,7 +28,7 @@
 #:import MDAccordionItem kivymd.accordion.MDAccordionItem
 #:import MDThemePicker kivymd.theme_picker.MDThemePicker
 #:import math math
-#:import MapSource mapview.MapSource
+
 
 #on_press: Animation(x=newposition or y=newposition).start(id) #to animate things
 
@@ -678,26 +678,7 @@ AnchorLayout:
 												center_y: self.parent.center_y
 												size: 70, 70
 												allow_stretch: True
-								Button:
-										background_color:(0.9, 0.9, 0.9, 0.0)
-										on_press: sm.current = 'gps'
-										on_press: sm.transition.direction = 'left'
-										on_press: Animation(y=-100, duration=.2).start(dock)
-										on_press: Animation(y=-100, duration=.2).start(dock_normal_audio)
-										on_press: Animation(y=-100, duration=.2).start(dock_normal_perf)
-										on_press: Animation(y=-100, duration=.2).start(dock_normal_clock)
-										on_press: Animation(y=-100, duration=.2).start(dock_normal_apps)
-										on_press: Animation(y=-100, duration=.2).start(dock_normal_controls)
-										on_press: Animation(y=-100, duration=.2).start(dock_normal_brightness)
-										on_press: Animation(y=-100, duration=.2).start(dock_normal_power)
-										text: "\n\n\n\nGPS"
-										font_size: 20
-										Image:
-												source: 'data/icons/app_icons/gps_icon.png'
-												center_x: self.parent.center_x
-												center_y: self.parent.center_y
-												size: 70, 70
-												allow_stretch: True
+
 								Button:
 										background_color:(0.9, 0.9, 0.9, 0.0)
 										on_press: sm.current = 'stopwatch'
@@ -1748,55 +1729,7 @@ AnchorLayout:
 										pos: -300, 180
 
 
-				GPSScreen:
-						name: "gps"
-						FloatLayout:
-								size_hint: 1, 1
-								MapView: #WIP
-										lat: 39.135481
-										lon: -84.529143
-										zoom: 17 #maybe 18 for a little larger print
-								Image:
-										id: image
-										source: 'data/wallpapers/tempmap.png'
-										center_x: self.center_x
-										center_y: self.center_y
-										allow_stretch: True
-										opacity: 0
-								Image:
-										source: 'data/elements/GPS_Toolbar.png'
-										center_x: self.center_x
-										center_y: self.center_y
-										allow_stretch: True
-										opacity: .35
 
-								Label: #label to display current time
-										markup: True
-										text: app.timenow
-										font_size: 40
-										pos: 340, 210
-
-								Button: #return button
-										#text: "return to apps"
-										on_press: sm.current = 'apps'
-										on_press: sm.transition.direction = 'right'
-										on_press: Animation(y=-10, duration=.2).start(dock)
-										on_press: Animation(y=0, duration=.2).start(dock_normal_audio)
-										on_press: Animation(y=0, duration=.2).start(dock_normal_perf)
-										on_press: Animation(y=0, duration=.2).start(dock_normal_clock)
-										on_press: Animation(y=0, duration=.2).start(dock_normal_apps)
-										on_press: Animation(y=0, duration=.2).start(dock_normal_controls)
-										on_press: Animation(y=0, duration=.2).start(dock_normal_brightness)
-										on_press: Animation(y=0, duration=.2).start(dock_normal_power)
-										pos: -369, 399
-										size_hint: 1, .2
-										background_color:(0.9, 0.9, 0.9, 0.0)
-										Image:
-												source: 'data/icons/arrow_back_white.png'
-												center_x: self.parent.center_x
-												center_y: self.parent.center_y
-												size: 50, 50
-												allow_stretch: True
 
 				StopwatchScreen:
 						name: "stopwatch"
